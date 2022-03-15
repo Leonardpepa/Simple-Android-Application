@@ -1,6 +1,6 @@
 # Simple-Android-Application
 
-# This project is a part of the mobile development course from University of Macedonia
+# This project is part of the mobile development course from University of Macedonia
 
 # Purpose
 The purpose of the project is to make an introduction to the basics of android studio and android development so we can continue with more advanced topics
