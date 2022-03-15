@@ -10,6 +10,13 @@ In this project we implemented a basic app that can show a toast message on the 
 navigation from one fragment to another passing one argument the number of the counter so we can show a random number between that and 0. For the arguments 
 we used a library called safeargs
 
+# Preview
+## Toast message, counter, navigatation and random number
+![preview-image](https://github.com/Leonardpepa/Simple-Android-Application/blob/master/images/app1.png?raw=true)
+![preview-image](https://github.com/Leonardpepa/Simple-Android-Application/blob/master/images/app2.png?raw=true)
+
+
+
 # Instalation
 ```termunal
   git clone https://github.com/Leonardpepa/Simple-Android-Application.git
