@@ -30,12 +30,12 @@ public class SecondFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        Integer count = SecondFragmentArgs.fromBundle(getArguments()).getMyArg();
         String javaFormatString = getActivity().getString(R.string.hello_second_fragment);
-        String substitutedString = String.format(javaFormatString, getArguments().getInt("count"));
+        String substitutedString = String.format(javaFormatString, count);
         binding.headerTextview.setText(substitutedString);
 
-        binding.textviewSecond.setText(String.valueOf(getRandomNumber(getArguments().getInt("count"))));
+        binding.textviewSecond.setText(String.valueOf(getRandomNumber(count)));
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,7 +55,12 @@ public class SecondFragment extends Fragment {
         if(limit == 0){
             return 0;
         }
-        return new Random().nextInt(limit);
+        Random rand = new Random();
+        Integer randomInt = rand.nextInt(limit);
+        while (randomInt == 0){
+            randomInt = rand.nextInt(limit);
+        }
+        return randomInt;
     }
 
 

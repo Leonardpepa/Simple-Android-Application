@@ -49,11 +49,9 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Integer count = Integer.parseInt(binding.counterText.getText().toString());
-
-                Bundle bundle = new Bundle();
-                bundle.putInt("count", count);
+                FirstFragmentDirections.ActionFirstFragmentToSecondFragment action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(count);
                 NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment, bundle);
+                        .navigate(action);
             }
         });
     }
