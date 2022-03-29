@@ -22,4 +22,4 @@ we used a library called safeargs
   git clone https://github.com/Leonardpepa/Simple-Android-Application.git
 ```
 # Execution
-Open the peoject in android studio build it and run it.
+Open the project in android studio build it and run it.
